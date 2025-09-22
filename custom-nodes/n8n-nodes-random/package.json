@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "files": ["dist"],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp src/nodes/Random/random.svg dist/nodes/Random/random.svg",
     "clean": "rm -rf dist",
     "prepare": "npm run build"
   },
