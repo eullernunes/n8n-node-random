@@ -62,7 +62,7 @@ docker compose down
 
 
 
-## ℹ️ Informações adicionais
+##  Informações adicionais
 
 - n8n: v1.85.4  
 - Postgres: v16  
