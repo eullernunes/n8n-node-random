@@ -6,10 +6,10 @@ Este projeto implementa um **conector customizado para o n8n** chamado **Random*
 
 ##  Pré-requisitos
 
-Antes de iniciar, instale em sua máquina:
+Antes de iniciar, certifique-se de ter os seguintes itens instalados em sua máquina:
 
 - [Docker + Docker Compose](https://docs.n8n.io/hosting/installation/docker/)
-- (Opcional) [Node.js 22 (LTS)](https://nodejs.org/) — apenas se quiser compilar o custom node fora do container.
+- (Opcional) [Node.js 22 (LTS)](https://nodejs.org/) — necessário apenas se quiser compilar o custom node fora do container.
 - (Opcional) [WSL 2 (Windows Subsystem for Linux)](https://learn.microsoft.com/pt-br/windows/wsl/install) — caso esteja rodando em Windows
 
 ---
@@ -17,8 +17,9 @@ Antes de iniciar, instale em sua máquina:
 
 ##  Configurar o ambiente
 
-Crie um arquivo `.env` na raiz do projeto, voce pode utilizar esse exemplo:
-https://github.com/n8n-io/n8n-hosting/blob/main/docker-compose/withPostgres/.env
+Crie um arquivo .env na raiz do projeto.
+Você pode se basear neste exemplo:
+[Exemplo .env] (https://github.com/n8n-io/n8n-hosting/blob/main/docker-compose/withPostgres/.env)
 
 
 
@@ -26,11 +27,15 @@ https://github.com/n8n-io/n8n-hosting/blob/main/docker-compose/withPostgres/.env
 
 ```bash
 cd custom-nodes/n8n-nodes-random
+
+# Limpar instaçaões anteriores
 rm -rf node_modules package-lock.json dist
+
+#Instalar e compilar usando Node.js 22 em container
 docker run --rm -v "$PWD":/app -w /app node:22 bash -lc "npm install && npm run build"
 ```
 
-Isso gera os arquivos em `dist/`.
+Isso gera os arquivos compilados na pasta `dist/`.
 
 ##  Executar o serviço localmente
 
