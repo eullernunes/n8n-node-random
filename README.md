@@ -9,7 +9,6 @@ Este projeto implementa um **conector customizado para o n8n** chamado **Random*
 Antes de iniciar, certifique-se de ter os seguintes itens instalados em sua máquina:
 
 - [Docker + Docker Compose](https://docs.n8n.io/hosting/installation/docker/)
-- (Opcional) [Node.js 22 (LTS)](https://nodejs.org/) — necessário apenas se quiser compilar o custom node fora do container.
 - (Opcional) [WSL 2 (Windows Subsystem for Linux)](https://learn.microsoft.com/pt-br/windows/wsl/install) — caso esteja rodando em Windows
 
 ---
