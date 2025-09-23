@@ -18,7 +18,7 @@ Antes de iniciar, certifique-se de ter os seguintes itens instalados em sua máq
 
 Crie um arquivo .env na raiz do projeto.
 Você pode se basear neste exemplo:
-[Exemplo .env] (https://github.com/n8n-io/n8n-hosting/blob/main/docker-compose/withPostgres/.env)
+[Exemplo .env](https://github.com/n8n-io/n8n-hosting/blob/main/docker-compose/withPostgres/.env)
 
 
 
