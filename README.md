@@ -56,7 +56,7 @@ docker compose down
 
 ##  Executar os testes
 
-1. Acesse o editor em [http://localhost:5678](http://localhost:5678).  
+1. Acesse o n8n em [http://localhost:5678](http://localhost:5678).  
 2. Crie um novo workflow.  
 3. Adicione o node **Random**.  
 4. Configure os parâmetros:  
