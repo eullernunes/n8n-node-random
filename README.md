@@ -1,4 +1,4 @@
-# n8n Random Node (Custom Connector)
+# n8n Random Node
 
 Este projeto implementa um **conector customizado para o n8n** chamado **Random**, que utiliza a [API do Random.org](https://www.random.org/) para gerar números aleatórios entre um valor mínimo e máximo definidos pelo usuário.
 
